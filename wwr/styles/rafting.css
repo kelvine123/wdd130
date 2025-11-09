@@ -6,13 +6,15 @@
   --heading-font: "Georgia", serif;
   --primary-color: #0b7285;    /* deep teal */
   --accent1-color: #1089a3;    /* accent for overlays */
-  --accent2-color: #f6bd60;    /* warm accent */
+  --accent2-color: #f6bd60;    /* warm accent, can be used for buttons/highlights */
   --bg-color: #f7fafc;
   --content-bg: rgba(255,255,255,0.92);
 }
 
-/* --- Reset --- */
-*{
+/* --- Universal Reset --- */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,7 +30,7 @@ body{
   line-height: 1.5;
 }
 
-/* Limit width and center header/main/footer as required */
+/* Limit width and center header/main/footer */
 header, main, footer{
   width: 840px;
   margin: 0 auto;
@@ -68,24 +70,22 @@ header nav a:hover{
 
 /* --- Main / Hero styles --- */
 .hero{
-  position: relative; /* so h1 and article can be absolute within it */
+  position: relative;
   margin-top: 20px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
-/* Hero image acts as the background fill */
 .hero img{
-  display: block;      /* required by assignment */
+  display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-/* Hero title overlay */
 .hero h1{
-  position: absolute;  /* required */
+  position: absolute;
   top: 20px;
   left: 0;
   width: 100%;
@@ -96,10 +96,9 @@ header nav a:hover{
   color: #fff;
   background-color: var(--accent1-color);
   opacity: 0.9;
-  margin: 0;
 }
 
-/* Article overlay (positioned over the image) */
+/* Article overlay */
 .hero article{
   position: absolute;
   bottom: 18px;
@@ -114,19 +113,19 @@ header nav a:hover{
 
 /* Image inside the hero article */
 .hero article img.client-photo{
-  float: right;           /* required by assignment */
-  width: 125px;           /* required */
+  float: right;          /* W3C-required */
+  width: 125px;
   margin-left: 12px;
   border-radius: 6px;
   border: 2px solid rgba(11,114,133,0.12);
   box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
-/* Ensure article paragraph wraps nicely around floated image */
+/* Paragraph wraps around floated image */
 .hero article p{
   margin: 0;
   font-size: 0.98rem;
-  color: #234; /* darker tone */
+  color: #234;
 }
 
 /* --- Section styles --- */
@@ -144,7 +143,6 @@ h2{
   margin-bottom: 10px;
 }
 
-/* Placeholder text for empty content */
 .placeholder{
   color: #666;
   font-style: italic;
@@ -152,10 +150,10 @@ h2{
 
 /* --- Footer --- */
 footer{
-  margin-top: 24px;                 /* required margin-top */
-  border-top: 3px solid var(--primary-color);  /* required border-top */
+  margin-top: 24px;
+  border-top: 3px solid var(--primary-color);
   padding: 16px 0;
-  text-align: center;               /* required text-align */
+  text-align: center;
   background: linear-gradient(180deg, rgba(16,137,163,0.05), transparent);
 }
 
@@ -164,7 +162,7 @@ footer p{
   color: var(--primary-color);
 }
 
-/* Social media icons in footer */
+/* Social media */
 .socialmedia{
   display: flex;
   justify-content: center;
@@ -173,7 +171,7 @@ footer p{
 }
 
 .socialmedia a{
-  text-decoration: none; /* remove underline for image links */
+  text-decoration: none;
   display: inline-block;
 }
 
@@ -181,7 +179,6 @@ footer p{
   width: 32px;
   height: auto;
   display: block;
-  filter: none;
 }
 
 /* --- Responsive --- */
@@ -220,7 +217,7 @@ footer p{
 
   .hero article img.client-photo{
     width: 90px;
-    float: none;
+    float: none;         /* stacked on small screens */
     display: block;
     margin: 8px auto 10px;
   }
