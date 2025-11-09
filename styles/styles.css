@@ -1,0 +1,148 @@
+/* ========== GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* ========== HEADER ========== */
+header {
+  width: 100%;
+  background: linear-gradient(to right, #0077b6, #00b4d8);
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* ========== MAIN CONTENT ========== */
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+main h1 {
+  text-align: center;
+  color: #0077b6;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+main img {
+  display: block;
+  margin: 0.5rem auto 1.5rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 300px;
+}
+
+main p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* ========== ASIDE SECTION ========== */
+aside {
+  background-color: #e8f4f8;
+  border-left: 5px solid #00b4d8;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+aside h2 {
+  color: #0077b6;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+aside img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 1rem auto;
+  border-radius: 10px;
+}
+
+aside p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  width: 100%;
+  background: linear-gradient(to right, #0077b6, #00b4d8);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: auto;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  main, aside {
+    margin: 1rem;
+    padding: 1.2rem;
+  }
+
+  main img, aside img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  main, aside {
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}
