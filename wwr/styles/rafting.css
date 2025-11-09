@@ -1,12 +1,12 @@
 /* ========== Rafting site stylesheet ========== */
 
 /* --- CSS variables --- */
-:root{
+:root {
   --body-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --heading-font: "Georgia", serif;
   --primary-color: #0b7285;    /* deep teal */
   --accent1-color: #1089a3;    /* accent for overlays */
-  --accent2-color: #f6bd60;    /* warm accent, can be used for buttons/highlights */
+  --accent2-color: #f6bd60;    /* warm accent, now used for section headings */
   --bg-color: #f7fafc;
   --content-bg: rgba(255,255,255,0.92);
 }
@@ -21,7 +21,7 @@
 }
 
 /* --- Base page styles --- */
-body{
+body {
   font-family: var(--body-font);
   color: var(--primary-color);
   background-color: var(--bg-color);
@@ -31,13 +31,13 @@ body{
 }
 
 /* Limit width and center header/main/footer */
-header, main, footer{
+header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
 /* --- Header --- */
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,18 +45,18 @@ header{
   gap: 16px;
 }
 
-header .logo{
+header .logo {
   height: 64px;
   width: auto;
 }
 
 /* Navigation */
-header nav{
+header nav {
   display: flex;
   gap: 18px;
 }
 
-header nav a{
+header nav a {
   text-decoration: none;
   color: var(--primary-color);
   padding: 8px 12px;
@@ -64,12 +64,12 @@ header nav a{
   border-radius: 6px;
 }
 
-header nav a:hover{
+header nav a:hover {
   background-color: rgba(16,137,163,0.12);
 }
 
 /* --- Main / Hero styles --- */
-.hero{
+.hero {
   position: relative;
   margin-top: 20px;
   border-radius: 8px;
@@ -77,14 +77,14 @@ header nav a:hover{
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
-.hero img{
+.hero img {
   display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.hero h1{
+.hero h1 {
   position: absolute;
   top: 20px;
   left: 0;
@@ -99,7 +99,7 @@ header nav a:hover{
 }
 
 /* Article overlay */
-.hero article{
+.hero article {
   position: absolute;
   bottom: 18px;
   left: 18px;
@@ -112,8 +112,8 @@ header nav a:hover{
 }
 
 /* Image inside the hero article */
-.hero article img.client-photo{
-  float: right;          /* W3C-required */
+.hero article img.client-photo {
+  float: right;          /* float right on desktop */
   width: 125px;
   margin-left: 12px;
   border-radius: 6px;
@@ -122,14 +122,14 @@ header nav a:hover{
 }
 
 /* Paragraph wraps around floated image */
-.hero article p{
+.hero article p {
   margin: 0;
   font-size: 0.98rem;
   color: #234;
 }
 
 /* --- Section styles --- */
-section{
+section {
   margin: 20px 0;
   padding: 12px;
   background: white;
@@ -137,19 +137,19 @@ section{
   box-shadow: 0 6px 14px rgba(0,0,0,0.03);
 }
 
-h2{
+h2 {
   font-family: var(--heading-font);
-  color: var(--primary-color);
+  color: var(--accent2-color);  /* now using the previously unused variable */
   margin-bottom: 10px;
 }
 
-.placeholder{
+.placeholder {
   color: #666;
   font-style: italic;
 }
 
 /* --- Footer --- */
-footer{
+footer {
   margin-top: 24px;
   border-top: 3px solid var(--primary-color);
   padding: 16px 0;
@@ -157,65 +157,65 @@ footer{
   background: linear-gradient(180deg, rgba(16,137,163,0.05), transparent);
 }
 
-footer p{
+footer p {
   margin-bottom: 10px;
   color: var(--primary-color);
 }
 
 /* Social media */
-.socialmedia{
+.socialmedia {
   display: flex;
   justify-content: center;
   gap: 14px;
   align-items: center;
 }
 
-.socialmedia a{
+.socialmedia a {
   text-decoration: none;
   display: inline-block;
 }
 
-.socialmedia a img{
+.socialmedia a img {
   width: 32px;
   height: auto;
   display: block;
 }
 
 /* --- Responsive --- */
-@media (max-width: 900px){
-  header, main, footer{
+@media (max-width: 900px) {
+  header, main, footer {
     width: 92%;
   }
 
-  .hero h1{
+  .hero h1 {
     font-size: 1.5rem;
     padding: 10px;
   }
 
-  .hero article img.client-photo{
+  .hero article img.client-photo {
     width: 100px;
   }
 }
 
-@media (max-width: 480px){
-  header{
+@media (max-width: 480px) {
+  header {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
   }
 
-  header nav{
+  header nav {
     flex-wrap: wrap;
   }
 
-  .hero article{
+  .hero article {
     left: 10px;
     right: 10px;
     bottom: 12px;
     padding: 10px;
   }
 
-  .hero article img.client-photo{
+  .hero article img.client-photo {
     width: 90px;
     float: none;         /* stacked on small screens */
     display: block;
