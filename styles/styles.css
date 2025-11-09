@@ -53,10 +53,12 @@ main img {
   height: auto;               /* required */
   border: 3px solid #0077b6;  /* required */
   padding: 5px;               /* required */
- 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* ✅ required */
   display: block;
-  margin: 0 auto 1rem;
+  margin: 1rem auto;
+  border-radius: 50%;
 }
+
 
 main p {
   padding: 0;                 /* required */
