@@ -48,6 +48,12 @@ header {
 .logo {
   height: 64px;
 }
+.hero article img.client-photo {
+    float: right;
+    width: 125px;
+    margin-left: 12px;
+    border-radius: 6px;
+}
 
 /* Navigation */
 header nav {
