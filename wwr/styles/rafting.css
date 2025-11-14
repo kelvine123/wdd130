@@ -58,7 +58,71 @@ header nav a {
   font-weight: 600;
   border-radius: 6px;
 }
+/* --- HERO (used on index.html) --- */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 420px;               /* hero height */
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  background-size: cover;
+  background-position: center;
+}
+/* --- Main sections default card style --- */
+section.card{
+  margin: 20px 0;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.03);
+}
 
+/* hero content box (if used on hero) */
+.hero .hero-box {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  right: 18px;
+  background: var(--content-bg);
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}/* --- Newsletter (in hero or main) --- */
+.newsletter {
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-top: 12px;
+  flex-wrap:wrap;
+}
+.newsletter input[type="text"],
+.newsletter input[type="email"]{
+  padding:10px;
+  border-radius:6px;
+  border:1px solid #cfdde4;
+  font-size: 0.95rem;
+}
+.newsletter button{
+  padding:10px 14px;
+  background:var(--accent1-color);
+  color:white;
+  border:none;
+  border-radius:6px;
+  font-weight:600;
+  cursor:pointer;
+}
+.newsletter button:hover{ background:#0d6f82; }
+
+/* --- Main sections default card style --- */
+section.card{
+  margin: 20px 0;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.03);
+}
 header nav a:hover {
   background-color: rgba(16,137,163,0.12);
 }
@@ -306,6 +370,29 @@ h2 {
   margin-top: 8px;
   font-weight: 600;
 }
+/* --- TRIPS: trip card styles + table --- */
+.trip-card{
+  background:#fff;
+  border-radius:8px;
+  padding:12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+}
+.trip-card img{ width:100%; height:300px; object-fit:cover; border-radius:6px; }
+.trip-card h4{ margin-top:10px; color:var(--primary-color); font-family:var(--heading-font); }
+.trip-card p{ color:#444; }
+
+/* trips table */
+.trips-table{ width:100%; border-collapse:collapse; margin-top:14px; }
+.trips-table th, .trips-table td{
+  border:1px solid #e1e9ec;
+  padding:10px;
+  text-align:left;
+}
+.trips-table thead th{
+  background: #f1f7fa;
+  font-weight:700;
+  color:var(--primary-color);
+}
 
 /* ========== FOOTER ========== */
 footer {
@@ -315,6 +402,51 @@ footer {
   text-align: center;
   position: relative;
 }
+/*Img card*/
+.img-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+}
+
+.img-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.img-card h4 {
+  margin-top: 10px;
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+}
+
+.img-card p {
+  color: #444;
+}
+
+/* --- Trips Table --- */
+.trips-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 14px;
+}
+
+.trips-table th,
+.trips-table td {
+  border: 1px solid #e1e9ec;
+  padding: 10px;
+  text-align: left;
+}
+
+.trips-table thead th {
+  background: #f1f7fa;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
 
 .socialmedia {
   position: absolute;

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kuku Beria Rafting — Home</title>
+    <meta name="description"
+        content="Kuku Beria Rafting - exciting white water rafting trips, conservation, and guided adventures." />
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <!-- header (same on all pages) -->
+    <header>
+        <img src="images/logo.png" alt="Kuku Beria Rafting logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero: set background via inline style or update in CSS with actual image URL -->
+        <div class="hero" style="background-image:url('images/hero.jpg');">
+            <div class="hero-heading">Come ride the Beria — Adventure awaits!</div>
+
+            <div class="hero-box">
+                <p>Experience breathtaking scenery and guided white water rafting trips for all levels.</p>
+                <!-- newsletter sign up (name + email required) -->
+                <form class="newsletter" action="#" method="post" aria-label="Newsletter sign up">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <button type="submit">Join Newsletter</button>
+                </form>
+
+                <p style="margin-top:10px;">
+                    <a href="trips.html" class="contact-btn" style="display:inline-block; text-decoration:none;">See
+                        Trips & Book Now</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- grid with 2 image+content blocks (meets non-single-column requirement) -->
+        <section class="card grid-2" aria-labelledby="why-heading">
+            <div class="img-card">
+                <img src="images/plantings.jpg" alt="Tree planting and conservation">
+                <div class="content-block">
+                    <h3 id="why-heading">Conservation & Community</h3>
+                    <p>We plant trees, train local guides, and support community projects while offering safe rafting
+                        experiences.</p>
+                </div>
+            </div>
+
+            <div class="img-card">
+                <img src="images/tranings.jpg" alt="Guide training">
+                <div class="content-block">
+                    <h3>Guided Trips for All Levels</h3>
+                    <p>From calm scenic floats to adrenaline-filled rapids, our trips are designed for families,
+                        beginners, and experts.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-action card -->
+        <section class="card" aria-label="call to action">
+            <h3 style="font-family:var(--heading-font); color:var(--primary-color);">Ready for Adventure?</h3>
+            <p>Check out our trips page to find the perfect rafting journey. All trips include safety briefings,
+                equipment, and experienced guides.</p>
+            <p><a href="trips.html" class="contact-btn"
+                    style="text-decoration:none; display:inline-block; width:auto;">View Trips</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Kuku Beria Rafting — Kelvine Inganga</p>
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+            <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
