@@ -3,6 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Kuku Beria Rafting for inquiries, reservations, and adventure information.">
+    <meta name="author" content="Kelvine Inganga">
     <title>Kuku Beria Rafting - Contact Us</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -32,69 +36,73 @@
         <section class="contact-grid">
             <h2>Get in Touch</h2>
 
-            <!-- LEFT SIDE: MAP -->
-            <div class="map-container" style="width:100%; max-width:800px; margin:0 auto;">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127888.35828439592!2d32.3557!3d-1.286389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d4a76b1f91b3d%3A0x204ca5391f3a8e1e!2sLake%20Victoria!5e0!3m2!1sen!2ske!4v1699999999999!5m2!1sen!2ske"
-                    width="800" height="400" style="border:0; width:100%; height:400px;" allowfullscreen loading="lazy">
-                </iframe>
-            </div>
+            <section class="contact-grid">
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2623659.5601985944!2d33.55657009369885!3d-0.3305221451862861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1763350942288!5m2!1sen!2ske"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <form class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email">
+
+                    <label>Message Purpose</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="purpose"> General Inquiry</label>
+                        <label><input type="radio" name="purpose"> Reservation Question</label>
+                        <label><input type="radio" name="purpose"> Website Suggestion</label>
+                    </div>
+
+                    <label>Message</label>
+                    <textarea placeholder="Type here..."></textarea>
+
+                    <label><input type="checkbox"> Subscribe to newsletter</label>
+
+                    <button class="contact-btn">Get in Touch!</button>
+                </form>
+
+            </section>
 
 
-            <!-- RIGHT SIDE: FORM -->
-            <form class="contact-form">
-                <label>Name<br>
-                    <input type="text" placeholder="Your Name" required>
-                </label>
+            <section class="employees">
+                <h2>We Are Here to Serve You</h2>
 
-                <label>Email<br>
-                    <input type="email" placeholder="Your Email" required>
-                </label>
-
-                <p>Message Purpose</p>
-                <label><input type="radio" name="purpose"> General Inquiry</label>
-                <label><input type="radio" name="purpose"> Reservation Question</label>
-                <label><input type="radio" name="purpose"> Website Suggestion</label>
-
-                <label>Message<br>
-                    <textarea placeholder="Type here..." required></textarea>
-                </label>
-
-                <label class="newsletter">
-                    <input type="checkbox"> Please subscribe me to the monthly newsletter
-                </label>
-
-                <button type="submit" class="contact-btn">Get in Touch!</button>
-            </form>
-        </section>
-
-        <section class="employees">
-            <h2>We Are Here to Serve You</h2>
-
-            <div class="employee-grid">
-                <figure>
-                    <img src="images/employee1.jpg" alt="Employee Profile">
-                    <figcaption>Jibuno Owino - Manager</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee2.jpg" alt="Employee Profile">
-                    <figcaption>Kelvine Inganga - Coordinator</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee3.jpg" alt="Employee Profile">
-                    <figcaption>Comfort Kalu - Team Leader</figcaption>
-                </figure>
-            </div>
-        </section>
+                <div class="employee-grid">
+                    <figure>
+                        <img src="images/employee1.jpg" alt="Portrait of Jibuno Owino, Manager">
+                        <figcaption>Jibuno Owino - Manager</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/employee2.jpg" alt="Portrait of Kelvine Inganga, Coordinator">
+                        <figcaption>Kelvine Inganga - Coordinator</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/employee3.jpg" alt="Portrait of Comfort Kalu, Team Leader">
+                        <figcaption>Comfort Kalu - Team Leader</figcaption>
+                    </figure>
+                </div>
+            </section>
     </main>
 
     <footer>
-        <p>© 2025 Beria Kuku Rafting — Kelvine Inganga</p>
+        <p>© 2025 Kuku Beria Rafting — Kelvine Inganga</p>
 
         <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
-            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Follow us on Facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Follow us on Instagram">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Follow us on Twitter">
+            </a>
         </nav>
     </footer>
 </body>
